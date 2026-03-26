@@ -6,7 +6,7 @@ import random
 from mpl_toolkits.mplot3d import Axes3D
 from tools import norm, min_distance_point_to_line, show_img_2d, draw_segment2d_rotate
 from class_v_s import TPoint, Segment
-from pvtree.kamiya import get_random_position_c1, kamiya_optimal
+from kamiya import get_random_position_c1, kamiya_optimal
 import os, shutil
 from crop_veinline import crop
 import time
@@ -466,7 +466,7 @@ def get_mu():
     c_me = random.uniform(0.1, 0.43)
     c_b = random.uniform(0.1, 0.02)
     c_co = random.uniform(0.15, 0.3)
-    e = random.uniform(0.004, 0.02)  # 0.009
+    e = random.uniform(0.004, 0.01)
    
     mu_wt = 14 * e
     mu_me = 10 * e
