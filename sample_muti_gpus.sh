@@ -8,7 +8,6 @@ num_samples=10000   # Number of images / Number of gpus
 name=palmvein
 conddir=./pvtree/pv_pattern_results
 
-
 # To speed up generation, the dataset is split into multiple subsets based on the 
 # number of GPUs, and generation tasks are executed in parallel on separate GPUs.
 # '-n' means 8 gpus
